@@ -87,13 +87,13 @@ This structure helps maintain organized code and facilitates project navigation 
 1. **Clone the Repository:**
    
     ```
-    git clone https://github.com/your_username/backend_challenge.git
+    git clone https://github.com/Luffy981/lexmax_technical_test.git
     ```
 
 2. **Navigate to the Root of the Project:**
 
     ```
-    cd backend_challenge
+    cd lexmax_technical_test
     ```
 
 3. **Build the Docker Image:**
