@@ -8,7 +8,7 @@
 
 
 ## 📝 Description
-Welcome to the backend challenge proposed by Lexmax! **Backend Challenge** is a Python API built with Flask to manage users. This API provides endpoints to perform CRUD (Create, Read, Update, Delete) operations on user data stored in an SQLite database.
+Welcome to the backend challenge proposed by Lexmax!, is a Python API built with Flask to manage users. This API provides endpoints to perform CRUD (Create, Read, Update, Delete) operations on user data stored in an SQLite database.
 
 ## 💻 Development Scope
 
