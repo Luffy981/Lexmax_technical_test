@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    # command: ["python", "-m", "api.v1.app"]
+    depends_on:
+      - db
+  db:
+    image: "alpine:latest"
+    volumes:
+      - "./database.db:/app/database.db"
+    command: ["sh", "-c", "apk add --no-cache sqlite && tail -f /dev/null"]
