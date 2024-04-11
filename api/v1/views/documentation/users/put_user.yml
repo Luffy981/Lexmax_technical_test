@@ -1,0 +1,77 @@
+    Update existent user
+    ---
+    tags:
+      - Users
+    parameters:
+      - name: Update user
+        in: body
+        required: true
+        requires:
+          - name:
+          - lastname:
+          - email:
+        properties:
+          name:
+            type: string
+            description: User's name
+          lastname:
+            type: string
+            description: User's last name
+          email:
+            type: string
+            format: email
+            description: User's email address
+          address:
+            type: string
+            description: User's address
+          reference_address:
+            type: string
+            description: User's reference address
+          phone_number:
+            type: string
+            description: User's phone number
+            pattern: '^(\+\d{1,3}\s?)?(\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}$'
+            example: "+1234567890"
+
+
+    responses:
+      400:
+        description: Bad request. Missing required fields or invalid data provided
+      200:
+        description: request executed successfully
+        schema:
+            properties:
+              __class__:
+                type: string
+              created_at:
+                type: string
+                format: date-time
+                description: Time of creation of the user instance
+              updated_at:
+                type: string
+                format: date-time
+                description: Time of last update of the user instance
+              id:
+                type: integer
+                description: The ID of the user instance
+              email:
+                type: string
+                format: email
+                description: User's email address
+              name:
+                type: string
+                description: User's name
+              last_name:
+                type: string
+                description: User's last name
+              address:
+                type: string
+                description: User's address
+              reference_address:
+                type: string
+                description: User's reference address
+              phone_number:
+                type: string
+                description: User's phone number
+                pattern: '^(\+\d{1,3}\s?)?(\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}$'
+                example: "+1234567890"
