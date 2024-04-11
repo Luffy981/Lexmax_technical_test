@@ -8,10 +8,14 @@ from flasgger import Swagger
 from flasgger.utils import swag_from
 from models import storage
 import os
+import flasgger
 
-app = Flask(__name__, template_folder='/home/luffy/.local/lib/python3.10/site-packages/flasgger/ui3/templates',
-            static_url_path='/flasgger_static',
-            static_folder='/home/luffy/.local/lib/python3.10/site-packages/flasgger/ui3/static')
+template_folder = os.path.abspath(os.path.join(os.path.dirname(flasgger.__file__), 'ui3/templates'))
+static_folder = os.path.abspath(os.path.join(os.path.dirname(flasgger.__file__), 'ui3/static'))
+
+
+app = Flask(__name__, template_folder=template_folder, static_url_path='/flasgger_static', static_folder=static_folder)
+
 
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 app.register_blueprint(app_views)
