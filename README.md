@@ -22,7 +22,7 @@ Welcome to the backend challenge proposed by Lexmax! **Backend Challenge** is a 
 
 - **Delete User by ID:** Delete a user from the database using their unique ID.
 
-## 📂 File and Code Structure (Model-View-Controller)
+## 📂 File and Code Structure
 
 The project follows the Model-View-Controller (MVC) pattern to separate concerns and organize code:
 
