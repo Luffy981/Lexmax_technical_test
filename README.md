@@ -2,11 +2,13 @@
 
 - [📝 Description](#-description)
 - [💻 Development Scope](#-development-scope)
-- [📂 File and Code Structure](#-file-and-code-structure)
 - [🛠 Execution Instructions](#-execution-instructions)
+- [📄 Postman Documentation](#-postman-documentation)
+- [📂 File and Code Structure](#-file-and-code-structure)
 - [👨‍💻 Author](#-author)
 
 ## 📝 Description
+
 Welcome to the backend challenge proposed by Lexmax! **Backend Challenge** is a Python API built with Flask to manage users. This API provides endpoints to perform CRUD (Create, Read, Update, Delete) operations on user data stored in an SQLite database.
 
 ## 💻 Development Scope
@@ -21,6 +23,53 @@ Welcome to the backend challenge proposed by Lexmax! **Backend Challenge** is a 
 - **Update User Information:** Update the information of an existing user using their unique ID.
 
 - **Delete User by ID:** Delete a user from the database using their unique ID.
+
+## 🛠 Execution Instructions
+
+### Prerequisites
+- Docker installed on your system.
+
+### Steps to Run the Solution
+
+1. **Clone the Repository:**
+   
+    ```
+    git clone https://github.com/Luffy981/lexmax_technical_test.git
+    ```
+
+2. **Navigate to the Root of the Project:**
+
+    ```
+    cd lexmax_technical_test
+    ```
+
+3. **Build the Docker Image:**
+
+    ```
+    docker-compose build
+    ```
+
+4. **Start the Container:**
+
+    ```
+    docker-compose up
+    ```
+
+5. **Access the API:**
+   
+   The API will be available at `http://localhost:5000`.
+
+6. **Access the API Documentation:**
+   
+   The API documentation will be available at `http://localhost:5000/apidocs/`.
+
+7. **Interact with the API:**
+   
+   Use the routes and methods specified in the documentation to interact with the API and manage users.
+
+## 📄 Postman Documentation
+
+Explore the API endpoints and interact with them using Postman. View the detailed documentation [here](https://documenter.getpostman.com/view/27590507/2sA3Bhcu3z).
 
 ## 📂 File and Code Structure
 
@@ -75,49 +124,6 @@ The file you are currently reading, providing information about the project and 
 List of project dependencies to be installed with pip.
 
 This structure helps maintain organized code and facilitates project navigation and understanding.
-
-## 🛠 Execution Instructions
-
-### Prerequisites
-- Docker installed on your system.
-
-### Steps to Run the Solution
-
-1. **Clone the Repository:**
-   
-    ```
-    git clone https://github.com/Luffy981/lexmax_technical_test.git
-    ```
-
-2. **Navigate to the Root of the Project:**
-
-    ```
-    cd lexmax_technical_test
-    ```
-
-3. **Build the Docker Image:**
-
-    ```
-    docker-compose build
-    ```
-
-4. **Start the Container:**
-
-    ```
-    docker-compose up
-    ```
-
-5. **Access the API:**
-   
-   The API will be available at `http://localhost:5000`.
-
-6. **Access the API Documentation:**
-   
-   The API documentation will be available at `http://localhost:5000/apidocs/`.
-
-7. **Interact with the API:**
-   
-   Use the routes and methods specified in the documentation to interact with the API and manage users.
 
 ## 👨‍💻 Author
 
