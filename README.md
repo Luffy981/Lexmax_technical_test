@@ -61,6 +61,14 @@ Welcome to the backend challenge proposed by Lexmax! **Backend Challenge** is a 
    
    Use the routes and methods specified in the documentation to interact with the API and manage users.
 
+7. **Run Unit Tests:**
+   
+   Execute the following command to run the unit tests:
+
+    ```
+    python3 -m unittest discover -s tests/test_api -v
+    ```
+
 ## 📄 Postman Documentation
 
 Explore the API endpoints and interact with them using Postman. View the detailed documentation [here](https://documenter.getpostman.com/view/27590507/2sA3Bhcu3z).
