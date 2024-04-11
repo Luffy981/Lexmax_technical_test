@@ -79,8 +79,6 @@ The project follows the Model-View-Controller (MVC) pattern to separate concerns
 
 ### 📁 Folder `api`
 Contains files related to the Flask API.
-
-- **`__init__.py`:** File indicating that the `api` folder is a Python package.
   
 - **Folder `v1`:** Version 1 of the API.
 
@@ -88,15 +86,12 @@ Contains files related to the Flask API.
   
   - **`index.py`:** Starting file for version 1 of the API.
   
-  - **`__init__.py`:** File indicating that the `v1` folder is a Python package.
   
   - **Folder `views`:** Contains view controllers of the API.
 
     - **Folder `documentation`:** API documentation in YAML format.
 
     - **`index.py`:** Controller for the root route of the API.
-    
-    - **`__init__.py`:** File indicating that the `views` folder is a Python package.
     
     - **`users.py`:** Controller for user-related operations.
 
@@ -115,9 +110,13 @@ Contains data models of the application.
 
   - **`db_storage.py`:** Defines the logic for interacting with the database.
 
-  - **`__init__.py`:** File indicating that the `engine` folder is a Python package.
 
-- **`__init__.py`:** File indicating that the `models` folder is a Python package.
+### 🗂️ Folder `tests`
+Contains test files for the API.
+
+- **Folder `test_api`:** Contains unit tests for API endpoints.
+  
+  - **`test_api.py`:** Unit tests for API endpoints.
 
 ### 📄 File `README.md`
 The file you are currently reading, providing information about the project and its structure.
