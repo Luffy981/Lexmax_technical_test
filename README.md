@@ -43,27 +43,21 @@ Welcome to the backend challenge proposed by Lexmax! **Backend Challenge** is a 
     cd lexmax_technical_test
     ```
 
-3. **Build the Docker Image:**
+3. **Build the Docker Image and Start the Container:**
 
     ```
-    docker-compose build
+    sudo docker-compose up -d
     ```
 
-4. **Start the Container:**
-
-    ```
-    docker-compose up
-    ```
-
-5. **Access the API:**
+4. **Access the API:**
    
    The API will be available at `http://localhost:5000`.
 
-6. **Access the API Documentation:**
+5. **Access the API Documentation:**
    
    The API documentation will be available at `http://localhost:5000/apidocs/`.
 
-7. **Interact with the API:**
+6. **Interact with the API:**
    
    Use the routes and methods specified in the documentation to interact with the API and manage users.
 
